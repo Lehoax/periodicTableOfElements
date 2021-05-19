@@ -1,0 +1,220 @@
+<h1>les atomes</h1>
+
+
+<div class="periode">
+    <% @periode1.each do |atome| %>
+    <div class="atome  <%=atome.info_bloc%>">
+            <h4><%= atome.symbole%><h4>
+            <h6><%= atome.nom%><h6>
+    </div>
+    <% end %>
+</div>
+
+<div class="periode">
+        <div class="left">
+                <% @periode2.each do |atome| %>
+                        <% case atome.id.to_i %>
+                                <% when 3..4%>
+
+                                <div class="atome <%=atome.info_bloc%>">
+                                        <h4><%= atome.symbole%><h4>
+                                        <h6><%= atome.nom%><h6>
+                                </div>
+                                <% end %>
+                        <% end %>
+        </div>
+        <div class="right">
+                <% @periode2.each do |atome| %>
+                <% case atome.id.to_i %>
+                <% when 5..10%>
+                        <div class="atome <%=atome.info_bloc%>">
+                                <h4><%= atome.symbole%><h4>
+                                <h6><%= atome.nom%><h6>
+                        </div>
+                <% end %>
+                 <% end %>
+        </div>
+</div>
+
+
+
+
+<div class="periode">
+        <div class="left">
+                <% @periode3.each do |atome| %>
+                        <% case atome.id.to_i %>
+                                <% when 11..12%>
+
+                                <div class="atome <%=atome.info_bloc%>">
+                                        <h4><%= atome.symbole%><h4>
+                                        <h6><%= atome.nom%><h6>
+                                </div>
+                                <% end %>
+                        <% end %>
+        </div>
+        <div class="right">
+                <% @periode3.each do |atome| %>
+                <% case atome.id.to_i %>
+                <% when 13..18%>
+                        <div class="atome <%=atome.info_bloc%>">
+                                <h4><%= atome.symbole%><h4>
+                                <h6><%= atome.nom%><h6>
+                        </div>
+                <% end %>
+                 <% end %>
+        </div>
+</div>
+
+
+
+
+<div class="periode">
+        <div class="left">
+                <% @periode4.each do |atome| %>
+                        <% case atome.id.to_i %>
+                                <% when 19..20%>
+
+                                <div class="atome <%=atome.info_bloc%>">
+                                        <h4><%= atome.symbole%><h4>
+                                        <h6><%= atome.nom%><h6>
+                                </div>
+                                <% end %>
+                        <% end %>
+        </div>
+        <div class="right">
+                <% @periode4.each do |atome| %>
+                <% case atome.id.to_i %>
+                <% when 21..36%>
+                        <div class="atome <%=atome.info_bloc%>">
+                                <h4><%= atome.symbole%><h4>
+                                <h6><%= atome.nom%><h6>
+                        </div>
+                <% end %>
+                 <% end %>
+        </div>
+</div>
+
+
+
+<div class="periode">
+        <div class="left">
+                <% @periode5.each do |atome| %>
+                        <% case atome.id.to_i %>
+                                <% when 37..38%>
+
+                                <div class="atome <%=atome.info_bloc%>">
+                                        <h4><%= atome.symbole%><h4>
+                                        <h6><%= atome.nom%><h6>
+                                </div>
+                                <% end %>
+                        <% end %>
+        </div>
+        <div class="right">
+                <% @periode5.each do |atome| %>
+                <% case atome.id.to_i %>
+                <% when 39..54%>
+                        <div class="atome <%=atome.info_bloc%>">
+                                <h4><%= atome.symbole%><h4>
+                                <h6><%= atome.nom%><h6>
+                        </div>
+                <% end %>
+                 <% end %>
+        </div>
+</div>
+
+
+<div class="periode">
+        <div class="left">
+                <% @periode6.each do |atome| %>
+                        <% case atome.id.to_i %>
+                                <% when 55..56%>
+
+                                <div class="atome <%=atome.info_bloc%>">
+                                        <h4><%= atome.symbole%><h4>
+                                        <h6><%= atome.nom%><h6>
+                                </div>
+                                <% end %>
+                        <% end %>
+        </div>
+        <div class="right">
+                <div id="lanthanides" class="atome f">
+                     <h6>Lanthanides<h6>
+                     <h6>57-71<h6>
+                </div>
+                <% @periode6.each do |atome| %>
+                <% case atome.id.to_i %>
+                <% when 72..86%>
+                        <div class="atome <%=atome.info_bloc%>">
+                                <h4><%= atome.symbole%><h4>
+                                <h6><%= atome.nom%><h6>
+                        </div>
+                <% end %>
+                 <% end %>
+        </div>
+</div>
+
+
+
+<div class="periode">
+        <div class="left">
+  
+                <% @periode7.each do |atome| %>
+                        <% case atome.id.to_i %>
+                                <% when 87..88%>
+
+                                <div class="atome <%=atome.info_bloc%>">
+                                        <h4><%= atome.symbole%><h4>
+                                        <h6><%= atome.nom%><h6>
+                                </div>
+                                <% end %>
+                        <% end %>
+        </div>
+        <div class="right">
+                 <div id="actinides" class="atome f">
+                     <h6>Actinides<h6>
+                     <h6>89-103<h6>
+                </div>
+                <% @periode7.each do |atome| %>
+                <% case atome.id.to_i %>
+                <% when 104..118%>
+                        <div class="atome <%=atome.info_bloc%>">
+                                <h4><%= atome.symbole%><h4>
+                                <h6><%= atome.nom%><h6>
+                        </div>
+                <% end %>
+                 <% end %>
+        </div>
+</div>
+
+<div id="lanthanides_content" class="periode hidden">
+<div class="left">
+</div>
+  <div class="right">
+                <% @periode6.each do |atome| %>
+                <% case atome.id.to_i %>
+                <% when 57..71%>
+                        <div class="atome <%=atome.info_bloc%>">
+                                <h4><%= atome.symbole%><h4>
+                                <h6><%= atome.nom%><h6>
+                        </div>
+                <% end %>
+                 <% end %>
+        </div>
+</div>
+
+<div id="actinides_content" class="periode hidden">
+<div class="left">
+</div>
+  <div class="right">
+                <% @periode7.each do |atome| %>
+                <% case atome.id.to_i %>
+                <% when 89..103%>
+                        <div class="atome <%=atome.info_bloc%>">
+                                <h4><%= atome.symbole%><h4>
+                                <h6><%= atome.nom%><h6>
+                        </div>
+                <% end %>
+                 <% end %>
+        </div>
+</div>
+<%= javascript_pack_tag 'indexPage', 'data-turbolinks-track': 'reload' %>
