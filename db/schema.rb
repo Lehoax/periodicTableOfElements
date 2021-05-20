@@ -10,9 +10,39 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_18_234003) do
+ActiveRecord::Schema.define(version: 2021_05_20_134414) do
 
-# Could not dump table "atomes" because of following StandardError
-#   Unknown type '' for column 'id'
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "atomes", force: :cascade do |t|
+    t.string "idstr"
+    t.string "nom"
+    t.string "slug"
+    t.string "electron"
+    t.integer "numero"
+    t.string "symbole"
+    t.string "info_groupe"
+    t.integer "info_periode"
+    t.string "info_bloc"
+    t.text "masse_volumique"
+    t.string "cas"
+    t.string "einecs"
+    t.string "masse_atomique"
+    t.string "etat_oxydation"
+    t.string "rayon_atomique"
+    t.string "rayon_de_covalence"
+    t.string "rayon_de_van_der_waals"
+    t.string "configuration_electronique"
+    t.integer "decouverte_annee"
+    t.string "decouverte_noms"
+    t.string "decouverte_pays"
+    t.string "electronegativite"
+    t.string "point_de_fusion"
+    t.string "point_d_ebullition"
+    t.integer "is_radioactif"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
 end
