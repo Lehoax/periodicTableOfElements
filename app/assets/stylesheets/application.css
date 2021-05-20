@@ -14,6 +14,16 @@
  *= require_self
  */
 
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+.page_title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 h6 {
     font-size: small;
 }
@@ -46,19 +56,27 @@ h6 {
 }
 
 .s {
-    background-color: blue;
+    background-color: #56cffd;
 }
 
 .f {
-    background-color: red;
+    background-color: #FA2C28;
 }
 
 .d {
-    background-color: yellow;
+    background-color: #f6c700
 }
 
 .p {
-    background-color: green;
+    background-color: #8cfa58;
+}
+
+#lanthanides:hover {
+    cursor: pointer !important;
+}
+
+#actinides:hover {
+    cursor: pointer !important;
 }
 
 #lanthanides_content {
