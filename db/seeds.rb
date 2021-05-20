@@ -41,4 +41,4 @@ csv.each do |row|
   puts "#{t.id}, #{t.nom} saved"
 end
 
-puts "There are now #{Atome.count} rows in the transactions table"
+puts "There are now #{Atome.count} rows in the atome table"
